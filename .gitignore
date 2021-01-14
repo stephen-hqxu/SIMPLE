@@ -1,0 +1,3 @@
+#Compiled thingy should be ignored
+x64/
+.vs/
