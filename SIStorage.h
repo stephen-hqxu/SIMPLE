@@ -5,16 +5,16 @@
 #include <unordered_map>
 
 #include "SISection.h"
-#include "define_file.h"
+#include "SIDefineFile.h"
 
 using std::unordered_map;
-
-typedef unordered_map<SIString, SIMPLE::SISection> SISectionTable;
 
 /**
  * @brief SIMPLE - Smart INI Manager and Parser Lite Edition
 */
 namespace SIMPLE {
+
+	typedef unordered_map<SIString, SIMPLE::SISection> SISectionTable;
 
 	/**
 	 * @brief SIStorage loads the sections and keys or properties from SIParser and store them in hash table.

@@ -2,7 +2,7 @@
 #ifndef _SINullKeyException_H_
 #define _SINullKeyException_H_
 
-#include "define_file.h"
+#include "SIDefineFile.h"
 
 using std::exception;
 

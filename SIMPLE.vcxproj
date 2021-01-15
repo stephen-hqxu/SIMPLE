@@ -121,6 +121,7 @@
       <PreprocessorDefinitions>SIMPLE_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -155,7 +156,7 @@
     <ClCompile Include="SIStorage.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="define_file.h" />
+    <ClInclude Include="SIDefineFile.h" />
     <ClInclude Include="SIExporter.h" />
     <ClInclude Include="SINullKeyException.h" />
     <ClInclude Include="SIParser.h" />

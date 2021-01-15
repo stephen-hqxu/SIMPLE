@@ -5,7 +5,7 @@
 #include <fstream>
 
 #include "SIStorage.h"
-#include "define_file.h"
+#include "SIDefineFile.h"
 
 using std::fstream;
 using std::getline;

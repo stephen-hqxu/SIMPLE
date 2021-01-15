@@ -4,17 +4,17 @@
 
 #include <unordered_map>
 
-#include "SINullKeyException.h"
-#include "define_file.h"
-
 using std::unordered_map;
 
-typedef unordered_map<SIString, SIString> SIPropertyTable;
+#include "SINullKeyException.h"
+#include "SIDefineFile.h"
 
 /**
  * @brief SIMPLE - Smart INI Manager and Parser Lite Edition
 */
 namespace SIMPLE {
+
+	typedef unordered_map<SIString, SIString> SIPropertyTable;
 
 	/**
 	 * @brief SISection is a storage class for sections in ini file, each section contains multiple properties (or keys)

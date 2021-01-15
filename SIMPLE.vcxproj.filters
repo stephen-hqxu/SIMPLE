@@ -41,13 +41,13 @@
     <ClInclude Include="SIStorage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="define_file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SINullKeyException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SIExporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIDefineFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
