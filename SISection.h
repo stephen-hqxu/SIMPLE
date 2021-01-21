@@ -73,13 +73,13 @@ namespace SIMPLE {
 		 * @param key - The property of the key that needs to be removed.
 		 * @return True if the key is found and the property is removed, false if not found.
 		*/
-		const bool operator-=(const SIString);
+		bool operator-=(const SIString);
 
 		/**
 		 * @brief Get the number of property stored inside of this section
 		 * @return The number of property stored inside of this section
 		*/
-		const SISize getNumProperty();
+		SISize getNumProperty() const;
 
 		/**
 		 * @brief Return the itertor of the container from the beginning

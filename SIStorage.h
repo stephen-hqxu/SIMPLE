@@ -72,7 +72,7 @@ namespace SIMPLE {
 		 * @param section - The name of the section that needs to be removed
 		 * @return True if the section name is found and the section is removed
 		*/
-		const bool operator-=(const SIString);
+		bool operator-=(const SIString);
 
 		/**
 		 * @brief Insert a new property into a section, given the key of the property and the section name.
@@ -93,27 +93,27 @@ namespace SIMPLE {
 		 * If section name is specified as DEFAULT_SECTION or empty then the property will be searched in default section.
 		 * @return True if the name of the section AND the key is valid and the property is removed.
 		*/
-		const bool removeProperty(const SIString, const SIString = SIMPLE::DEFAULT_SECTION);
+		bool removeProperty(const SIString, const SIString = SIMPLE::DEFAULT_SECTION);
 
 		/**
 		 * @brief Get the number of section in this ini file
 		 * @return The number of section in this ini file
 		*/
-		const SISize getNumSection();
+		SISize getNumSection() const;
 
 		/**
 		 * @brief Get the number of property in a specific section.
 		 * @param section - The section name of which the property is located. If section name is not sepcified or specified as DEFAULT_SECTION then the default section will be returned.
 		 * @return The number of property in that section.
 		*/
-		const SISize getNumProperty(const SIString = SIMPLE::DEFAULT_SECTION);
+		SISize getNumProperty(const SIString = SIMPLE::DEFAULT_SECTION) const;
 
 		/**
 		 * @brief Check if the current ini file has default section.
 		 * Sometimes property may not be written inside a section, the program will parse those properties and put them inside a default section
 		 * @return True if contains default section
 		*/
-		const bool hasDefault();
+		bool hasDefault() const;
 
 		/**
 		 * @brief Return the iterator of the container from the beginning

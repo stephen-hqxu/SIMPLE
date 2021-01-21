@@ -19,7 +19,7 @@ SIExporter::~SIExporter() {
 	}
 }
 
-const bool SIExporter::WriteINI() {
+bool SIExporter::WriteINI() {
 	//handle the case when the file path is not valid
 	if (this->iniFile.fail()) {
 		throw exception("FileNotValidException");

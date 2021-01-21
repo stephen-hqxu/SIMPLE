@@ -38,7 +38,7 @@ namespace SIMPLE {
 		/**
 		 * @brief Export the ini file to the local file system
 		*/
-		const bool WriteINI();
+		bool WriteINI();
 
 	};
 }

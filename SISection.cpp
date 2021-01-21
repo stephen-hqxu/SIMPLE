@@ -26,11 +26,11 @@ SIString& SISection::operator+=(const SIString key) {
 	return this->properties[key];
 }
 
-const bool SISection::operator-=(const SIString key) {
+bool SISection::operator-=(const SIString key) {
 	return this->properties.erase(key) == 1;//we have unique key so the number of erase must be either 1 or 0
 }
 
-const SISize SISection::getNumProperty() {
+SISize SISection::getNumProperty() const {
 	return this->properties.size();
 }
 
